@@ -1,0 +1,24 @@
+name: Bug / verification failure
+description: Record a reproducible defect or failed control.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / logs
+      description: Redact secrets and personal data.
+    validations:
+      required: true
